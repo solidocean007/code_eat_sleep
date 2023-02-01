@@ -47,7 +47,7 @@
   transition: all 0.5s ease-in;
 }
 
-.modal-header .fa-times :hover {
+.modal-header .fa-times:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
