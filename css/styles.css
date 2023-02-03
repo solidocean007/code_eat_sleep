@@ -33,11 +33,11 @@
 
 .theme-body .btn-group {
   box-shadow: 0 12px 34px rgb(22 28 45 / 20%);
-    border-radius: 33px;
-    background-color: white;
-    overflow: hidden;
-    display: flex;
-    max-width: 153px;
+  border-radius: 33px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  max-width: 153px;
 }
 
 .theme-body .btn-group .switcher-btn {
