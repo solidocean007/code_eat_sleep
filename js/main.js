@@ -16,6 +16,7 @@ const portfolioData = '[data-item]';
 
 const root = document.documentElement;
 
+
 /* Theme */
 const toggleTheme = document.querySelector(themeTab);
 const switcher = document.querySelectorAll(switcherBtn);
