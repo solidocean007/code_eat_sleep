@@ -120,6 +120,6 @@ for (const el of openModal) {
 // Full Site Modal "open buttons"
 for (const el of closeModal) {
   el.addEventListener("click", function () {
-    this.parentElement.parentElement.classList.remove(isVisible);
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
   });
 }
