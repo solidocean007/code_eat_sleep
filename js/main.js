@@ -1,21 +1,20 @@
-const theme = 'theme';
-const dataTheme = 'data-theme';
-const themeTab = '.theme-tab';
-const switcherBtn = '.switcher-btn';
-const dark = 'dark';
-const light = 'light';
-const open = 'open';
-const active = 'active';
+const theme = "theme";
+const dataTheme = "data-theme";
+const themeTab = ".theme-tab";
+const switcherBtn = ".switcher-btn";
+const dark = "dark";
+const light = "light";
+const open = "open";
+const active = "active";
 
-const modalOpen = '[data-open]';
-const modalClose = '[data-close]';
-const isVisible = 'is-visible';
+const modalOpen = "[data-open]";
+const modalClose = "[data-close]";
+const isVisible = "is-visible";
 
-const dataFilter = '[data-filter]';
-const portfolioData = '[data-item]';
+const dataFilter = "[data-filter]";
+const portfolioData = "[data-item]";
 
 const root = document.documentElement;
-
 
 /* Theme */
 const toggleTheme = document.querySelector(themeTab);
@@ -25,18 +24,19 @@ const currentTheme = localStorage.getItem(theme);
 /* Portfolio */
 const filterLink = document.querySelectorAll(dataFilter);
 const portfolioItems = document.querySelectorAll(portfolioData);
-const searchBox = document.querySelector('#search');
+const searchBox = document.querySelector("#search");
 
 /* Modal */
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
 const setActive = (el, selector) => {
-  if(document.querySelector(`${selector}.${active}`) !== null) {
+  if (document.querySelector(`${selector}.${active}`) !== null) {
     document.querySelector(`${selector}.${active}`).classList.remove(active);
+  } else {
+    el.classList.add(active);
   }
-  el.classList.add(active);
-}
+};
 
 const setTheme = (val) => {
   if (val === dark) {
@@ -54,14 +54,14 @@ if (currentTheme) {
     btn.classList.remove(active);
   });
 
-  if(currentTheme === dark) {
+  if (currentTheme === dark) {
     switcher[1].classList.add(active);
   } else {
     switcher[0].classList.add(active);
   }
 }
 
-toggleTheme.addEventListener("click", function() {
+toggleTheme.addEventListener("click", function () {
   const tab = this.parentElement.parentElement;
   if (!tab.className.includes(open)) {
     tab.classList.add(open);
@@ -71,45 +71,41 @@ toggleTheme.addEventListener("click", function() {
 });
 
 for (const el of switcher) {
-  el.addEventListener('click', function() {
+  el.addEventListener("click", function () {
     const toggle = this.dataset.toggle;
     setActive(el, switcherBtn);
     setTheme(toggle);
-  })
+  });
 }
 
-searchBox.addEventListener('keyup', (e) => {
+searchBox.addEventListener("keyup", (e) => {
   const searchInput = e.target.value.toLowerCase().trim();
-  
   portfolioItems.forEach((card) => {
-    if (card.dataset.item.includes(searchInput)){
-      card.style.display = 'block';
+    if (card.dataset.item.includes(searchInput)) {
+      card.style.display = "block";
     } else {
-      card.style.display = 'none';
+      card.style.display = "none";
     }
-  })
-})
+  });
+});
 
-
-
-for ( const link of filterLink) {
-  link.addEventListener('click', function(){
-    setActive(link, '.filter-link')
+for (const link of filterLink) {
+  link.addEventListener("click", function () {
+    setActive(link, ".filter-link");
     const filter = this.dataset.filter;
     portfolioItems.forEach((card) => {
-      if(filter === 'all'){
-        card.style.display = 'block';
-      } else if (card.dataset.item === filter){
-        card.style.display = 'block';
+      if (filter === "all") {
+        card.style.display = "block";
+      } else if (card.dataset.item === filter) {
+        card.style.display = "block";
       } else {
-        card.style.display = 'none';
+        card.style.display = "none";
       }
-    })
-  })
+    });
+  });
 }
 
-
-// Full Site Modal "open buttons"
+// Modal/Full Site Modal "open buttons"
 for (const el of openModal) {
   el.addEventListener("click", function () {
     const modalId = this.dataset.open;
@@ -117,9 +113,23 @@ for (const el of openModal) {
   });
 }
 
-// Full Site Modal "open buttons"
 for (const el of closeModal) {
   el.addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
   });
 }
+
+// Modal
+document.addEventListener('click', (e) => {
+  console.log(e.target, document.querySelector('.modal.is-visible'));
+  if (e.target === document.querySelector('.modal.is-visible')) {
+    document.querySelector('.modal.is-visible').classList.remove(isVisible);
+  }
+});
+
+document.addEventListener('keyup', (e) => {
+  // console.log(e.key);
+  if (e.key === "Escape") {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
