@@ -7,11 +7,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "Web Development",
     siteType: "Beer Website",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 1",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
   {
     item: "app",
@@ -20,11 +21,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "App Development",
     siteType: "Utility Website",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 2",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
   {
     item: "ui",
@@ -33,11 +35,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "Logistics",
     siteType: "Delivery Website",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam.',
-    modal21 : 'sit amet consectetur adipisicing elit. Labore, quam.',
-    modal31 : 'consectetur adipisicing elit. Labore, quam.',
+    modalH3: "Web Project 3",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam.",
+    modal21: "sit amet consectetur adipisicing elit. Labore, quam.",
+    modal31: "consectetur adipisicing elit. Labore, quam.",
   },
   {
     item: "ui",
@@ -46,11 +49,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "Design",
     siteType: "Exercise Website",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 4",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
   {
     item: "data",
@@ -59,11 +63,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "Data tracking",
     siteType: "Exercise Website",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 5",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
   {
     item: "ui",
@@ -72,11 +77,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "Payment receiving",
     siteType: "Food truck website",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 6",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
   {
     item: "ui",
@@ -85,11 +91,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "Visual arts",
     siteType: "ASMR app",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 7",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
   {
     item: "app",
@@ -98,11 +105,12 @@ const data = [
     CardImgAlt: "portfolio-icon",
     skill: "API",
     siteType: "Stocks and finance",
-    modalH3 : 'Web Project 1',
-    modalItemTitle : 'My first awesome website',
-    modalP1 : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP2 : 'sit amet consectetur adipisicing elit. Labore, quam. ',
-    modalP3 : 'consectetur adipisicing elit. Labore, quam. ',
+    modalH3: "Web Project 8",
+    modalItemTitle: "My first awesome website",
+    modalP1:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP2: "sit amet consectetur adipisicing elit. Labore, quam. ",
+    modalP3: "consectetur adipisicing elit. Labore, quam. ",
   },
 ];
 
@@ -165,8 +173,6 @@ for (let i = 0; i < data.length; i++) {
   popBoxH3.append(data[i].siteType);
   popBox.append(popBoxH3);
 }
-
-
 
 // /* Modal */
 const openModal = document.querySelectorAll(modalOpen);
@@ -272,24 +278,26 @@ document.addEventListener("click", (e) => {
 document.addEventListener("keyup", (e) => {
   // console.log(e.key);
   if (e.key === "Escape") {
-    document.querySelector(".modal.is-visible").classList.remove('isVisible');
+    document.querySelector(".modal.is-visible").classList.remove("isVisible");
   }
 });
 
-const portfolioCards = document.querySelectorAll('.portfolio-card')
+const portfolioCards = document.querySelectorAll(".portfolio-card");
+
 // Popup Modal builder
 portfolioCards.forEach((item) => {
-  item.addEventListener("click", function() {
-    const cardId = this.getAttribute('data-open');
-    const portfolioItem = data.find(item => item.dataOpen == cardId);
+  item.addEventListener("click", function () {
+    const cardId = this.getAttribute("data-open");
+    const portfolioItem = data.find((item) => item.dataOpen == cardId);
 
     const main = document.querySelector(".site-wrapper");
     const modalBackDrop = document.createElement("div");
+    modalBackDrop.setAttribute("id", portfolioItem.dataOpen);
     modalBackDrop.classList.add("modal");
-    modalBackDrop.setAttribute("id", "popUp");
+    modalBackDrop.classList.add(isVisible);
+    console.log(portfolioItem.dataOpen);
     modalBackDrop.setAttribute("data-animation", "slideInOutTop");
     main.append(modalBackDrop);
-    modalBackDrop.style.display = 'block';
 
     const modalDialog = document.createElement("div");
     modalDialog.classList.add("modal-dialog");
@@ -303,30 +311,30 @@ portfolioCards.forEach((item) => {
     hThree.textContent = portfolioItem.modalH3;
     header.append(hThree);
 
-    const iconClose = document.createElement('i');
-    iconClose.classList.add('fas fa-times');
-    iconClose.setAttribute('data-close');
+    const iconClose = document.createElement("i");
+    iconClose.className = "fas fa-times";
+    iconClose.setAttribute("data-close", "");
     header.append(iconClose);
 
-    const modalBody = document.createElement('div');
-    modalBody.classList.add('modal-body');
+    const modalBody = document.createElement("div");
+    modalBody.classList.add("modal-body");
     modalDialog.append(modalBody);
 
-    const imgWrapper = document.createElement('div');
-    imgWrapper.classList.add('img-wrapper');
-    const modalImage = document.createElement('img');
+    const imgWrapper = document.createElement("div");
+    imgWrapper.classList.add("img-wrapper");
+    const modalImage = document.createElement("img");
     modalImage.src = portfolioItem.CardImg;
     modalBody.append(imgWrapper);
     imgWrapper.append(modalImage);
 
-    const textWrapper = document.createElement('div');
-    textWrapper.classList.add('text-wrapper');
-    const p1 = document.createElement('p');
-    p1.textContent = 'lorem'
-    const p2 = document.createElement('p');
-    p2.textContent = 'lorem'
-    const p3 = document.createElement('p');
-    p3.textContent = 'lorem'
+    const textWrapper = document.createElement("div");
+    textWrapper.classList.add("text-wrapper");
+    const p1 = document.createElement('strong');
+    p1.textContent = portfolioItem.modalItemTitle;
+    const p2 = document.createElement("p");
+    p2.textContent = portfolioItem.modalP1;
+    const p3 = document.createElement("p");
+    p3.textContent = portfolioItem.modalP2;
     textWrapper.append(p1);
     textWrapper.append(p2);
     textWrapper.append(p3);
