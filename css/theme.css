@@ -8,14 +8,14 @@
   --border: #383f53;
 }
 
-[data-theme="light"] .hero-bg {
+[ data-theme = "light" ] .hero-bg {
   background-image: url("../assets/images/hero-pattern.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-[data-theme="dark"]{
+[ data-theme = "dark" ] {
   --bg: #171a23;
   --bg-panel: #f1f1f1;
   --color-headings: #ffff;
