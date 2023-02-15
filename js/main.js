@@ -174,7 +174,7 @@ for (let i = 0; i < data.length; i++) {
   popBox.append(popBoxH3);
 }
 
-// /* Modal */
+// Modal
 const openModal = document.querySelectorAll(modalOpen);
 const closeModal = document.querySelectorAll(modalClose);
 
@@ -255,6 +255,7 @@ for (const link of filterLink) {
 
 // Modal/Full Site Modal "open buttons"
 for (const el of openModal) {
+  console.log('this is el on line 257: ' + el)
   el.addEventListener("click", function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
@@ -262,25 +263,12 @@ for (const el of openModal) {
 }
 
 for (const el of closeModal) {
+  console.log('this is el on line 265: ' + el)
+
   el.addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
   });
 }
-
-// Modal
-document.addEventListener("click", (e) => {
-  console.log(e.target, document.querySelector(".modal.is-visible"));
-  if (e.target === document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-  }
-});
-
-document.addEventListener("keyup", (e) => {
-  // console.log(e.key);
-  if (e.key === "Escape") {
-    document.querySelector(".modal.is-visible").classList.remove("isVisible");
-  }
-});
 
 const portfolioCards = document.querySelectorAll(".portfolio-card");
 
@@ -329,7 +317,7 @@ portfolioCards.forEach((item) => {
 
     const textWrapper = document.createElement("div");
     textWrapper.classList.add("text-wrapper");
-    const p1 = document.createElement('strong');
+    const p1 = document.createElement("strong");
     p1.textContent = portfolioItem.modalItemTitle;
     const p2 = document.createElement("p");
     p2.textContent = portfolioItem.modalP1;
@@ -339,5 +327,33 @@ portfolioCards.forEach((item) => {
     textWrapper.append(p2);
     textWrapper.append(p3);
     modalBody.append(textWrapper);
+
+    // Add event listener to close button
+    iconClose.addEventListener("click", function () {
+      modalBackDrop.remove();
+    });
   });
+});
+
+// Modal
+document.addEventListener("click", (e) => {
+  console.log(
+    "line 339 target this click: " + e.target,
+    document.querySelector(".modal.is-visible")
+  );
+  if (e.target === document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").remove();
+  }
+});
+
+document.addEventListener("keyup", (e) => {
+  console.log(
+    "line 349 target this click: " + e.target,
+    document.querySelector(".modal.is-visible")
+  );
+  if (e.key === "Escape") {
+    // document.querySelector(".modal.is-visible").classList.remove("is-Visible");
+     document.querySelector(".modal.is-visible").remove();
+    
+  }
 });
