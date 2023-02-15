@@ -219,11 +219,11 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: .85;
+  opacity: 0.85;
   border-radius: 8px;
 }
 
-.portfolio-card:hover .card-popup-box{
+.portfolio-card:hover .card-popup-box {
   bottom: 20px;
   opacity: 1;
   cursor: pointer;
@@ -294,7 +294,21 @@
   box-shadow: 0 22px 34px rgba(22, 28, 45, 0.3);
   transition: all 300ms ease-in-out;
   position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
+
+.review-item.active {
+  transform: translate(0, -10%);
+  z-index: 10;
+  opacity: 1;
+}
+
+.review-item.prev,
+.review-item.next { opacity: .25;}
+
+.review-item.prev { transform: translateX(-75%);}
+.review-item.next { transform: translateX(75%);}
 
 .review-item .review-text {
   padding-bottom: 2.5rem;
@@ -345,8 +359,12 @@
   opacity: 1;
 }
 
-.slide-ctrl-container button:nth-child(1) {padding-right: 10px;}
-.slide-ctrl-container button:nth-child(2) {padding-left: 10px;}
+.slide-ctrl-container button:nth-child(1) {
+  padding-right: 10px;
+}
+.slide-ctrl-container button:nth-child(2) {
+  padding-left: 10px;
+}
 
 .main-menu {
   display: flex;
@@ -364,7 +382,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
@@ -427,35 +445,33 @@
 .modal-body .img-wrapper {
   max-width: 200px;
   margin-right: 0.75rem;
-
 }
 .modal-body .img-wrapper img {
- width: 100%;
- border-radius: 8px;
- object-fit: cover;
- height: 200px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 200px;
 }
 
 [data-animation="zoomInOut"].full-site-modal {
   transform: scale(0.2);
 }
 
-[data-animation = 'slideInOutTop'] .modal-dialog {
+[data-animation="slideInOutTop"] .modal-dialog {
   opacity: 0;
   transition: all 0.2s;
 }
 
-[data-animation = 'slideInOutTop'].is-visible .modal-dialog {
+[data-animation="slideInOutTop"].is-visible .modal-dialog {
   opacity: 1;
   transition: 0.5s;
 }
 
-[data-animation = 'slideInOutTop'] .modal-dialog {
+[data-animation="slideInOutTop"] .modal-dialog {
   transform: translateY(-100%);
 }
 
 [data-animation="zoomInOut"].full-site-modal.is-visible,
-[data-animation = 'slideInOutTop'].is-visible .modal-dialog {
+[data-animation="slideInOutTop"].is-visible .modal-dialog {
   transform: none;
 }
-
