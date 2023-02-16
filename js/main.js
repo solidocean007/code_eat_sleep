@@ -255,7 +255,6 @@ for (const link of filterLink) {
 
 // Modal/Full Site Modal "open buttons"
 for (const el of openModal) {
-  console.log('this is el on line 257: ' + el)
   el.addEventListener("click", function () {
     const modalId = this.dataset.open;
     document.getElementById(modalId).classList.add(isVisible);
@@ -263,8 +262,6 @@ for (const el of openModal) {
 }
 
 for (const el of closeModal) {
-  console.log('this is el on line 265: ' + el)
-
   el.addEventListener("click", function () {
     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
   });
@@ -337,20 +334,12 @@ portfolioCards.forEach((item) => {
 
 // Modal
 document.addEventListener("click", (e) => {
-  console.log(
-    "line 339 target this click: " + e.target,
-    document.querySelector(".modal.is-visible")
-  );
   if (e.target === document.querySelector(".modal.is-visible")) {
     document.querySelector(".modal.is-visible").remove();
   }
 });
 
 document.addEventListener("keyup", (e) => {
-  console.log(
-    "line 349 target this click: " + e.target,
-    document.querySelector(".modal.is-visible")
-  );
   if (e.key === "Escape") {
     // document.querySelector(".modal.is-visible").classList.remove("is-Visible");
      document.querySelector(".modal.is-visible").remove();
